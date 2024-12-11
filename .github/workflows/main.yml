@@ -1,17 +1,25 @@
-on: push
 name: 🚀 Deploy website on push
+
+on:
+  push:
+    branches:
+      - main  # Change this to your target branch if necessary
+
 jobs:
   web-deploy:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
+
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v4
-    
+
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: ftp.dantechdevelopers.com
-        username: portfolio@dantechdevelopers.com
-        password: ${{ secrets.ftp_password }}  # This references the secret
+        username: master@dantechdevelopers.com  # Updated username
+        password: ${{ secrets.ftp_password }}  # Ensure this secret is set in your repository
         port: 21
+        local-dir: ./path/to/your/local/dir  # Adjust this to your local directory
+        server-dir: /path/to/your/server/dir  # Adjust this to your server directory
