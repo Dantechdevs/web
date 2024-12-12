@@ -17,9 +17,9 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
-        server: ftp.dantechdevelopers.com
-        username: master@dantechdevelopers.com  # Updated username
-        password: ${{ secrets.Danpury2010 }}  # Ensure this secret is set in your repository
-        port: 21
-        local-dir: ./path/to/your/local/dir  # Adjust this to your local directory
-        server-dir: /path/to/your/server/dir  # Adjust this to your server directory
+        server: ftp.dantechdevelopers.com                
+        username: ${{ secrets.master@dantechdevelopers.com }}    
+        password: ${{ secrets.Danpury }}            
+        port: 21                                         
+        local-dir: ./path/to/your/local/dir             
+        server-dir: /path/to/your/server/dir            
