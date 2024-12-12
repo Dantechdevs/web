@@ -19,7 +19,7 @@ jobs:
       with:
         server: ftp.dantechdevelopers.com
         username: master@dantechdevelopers.com  # Updated username
-        password: ${{ secrets."Dantech Developers"). }}  # Ensure this secret is set in your repository
+        password: ${{ secrets.Danpury2010 }}  # Ensure this secret is set in your repository
         port: 21
         local-dir: ./path/to/your/local/dir  # Adjust this to your local directory
         server-dir: /path/to/your/server/dir  # Adjust this to your server directory
