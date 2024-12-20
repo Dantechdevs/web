@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Chat Button</title>
+</head>
+<body>
+    <a href="#" class="btn" id="chatButton">Let's chat <i class='bx bx-message-dots'></i></a>
+
+    <div id="chatWindow" class="chat-window">
+        <div class="chat-header">
+            <h2>Chat with Us</h2>
+            <button id="closeChat">X</button>
+        </div>
+        <div class="chat-body">
+            <div class="messages" id="messages"></div>
+            <input type="text" id="chatInput" placeholder="Type your message...">
+            <button id="sendMessage">Send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
